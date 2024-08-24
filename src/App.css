@@ -1,38 +1,32 @@
+/* 전체 페이지 스타일 */
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column; /* 자식 요소를 수직으로 배열 */
+    height: 100vh; /* 전체 화면 높이 */
+    margin: 0;
+    font-family: 'Pretendard', sans-serif; /* 기본 폰트 설정 */
+    background: linear-gradient(180deg, rgba(248, 248, 250, 0.7) 0%, rgb(248, 248, 250) 39.5%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header 스타일 */
+header {
+    width: 100%;
+    background-color: #ffffff; /* 필요에 따라 배경색 추가 */
+    padding: 0 20px; /* 좌우 패딩 추가 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* main 스타일 */
+main {
+    display: flex;
+    flex-direction: column; /* 자식 요소를 수직으로 배열 */
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center;
+    gap: 25px; /* 자식 요소 간의 간격 설정 */
+    margin: 0;
+    padding: 25px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+    background: linear-gradient(180deg, rgba(248, 248, 250, 0.7) 0%, rgb(248, 248, 250) 39.5%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
